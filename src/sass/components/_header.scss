@@ -1,0 +1,22 @@
+//
+// Header
+// @group components
+//
+.header {
+	background-color: rgba($color-black, .6);
+	left: 0;
+	padding: 1em 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: $layer-header;
+
+	&__inner {
+		margin: 0 auto;
+		max-width: $layout-max-width;
+	}
+
+	&__logo {
+		font-size: 2em;
+	}
+}

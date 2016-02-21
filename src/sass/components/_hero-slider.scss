@@ -1,0 +1,69 @@
+//
+// Hero Slider
+// @group components
+//
+.hero-slider {
+	position: relative;
+
+	&__list {
+		margin: 0 auto;
+		max-width: $layout-slider-max-width;
+		position: relative;
+		z-index: 0;
+
+		&:after {
+			content: '';
+			display: block;
+			padding-bottom: 45%;
+		}
+	}
+
+	&__item {
+		background-blend-mode: multiply;
+		background-position: center;
+		background-size: cover, 100% 100%;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		&-inner {
+			bottom: 0;
+			left: 0;
+			margin: 0 auto;
+			max-width: $layout-max-width;
+			position: absolute;
+			right: 0;
+			width: 100%;
+		}
+
+		&-title {
+			font-size: 2em;
+		}
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&--type-previous {
+			left: 0;
+		}
+
+		&--type-next {
+			right: 0;
+		}
+	}
+
+	//
+	// Indicator
+	//
+	.indicator {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+}

@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+//
+// Utils
+//
+@import
+	'utils/mixins',
+	'utils/variables';
+
+
+//
+// Base
+//
+@import
+	'base/base';
+
+
+//
+// Components
+//
+@import
+	'components/footer',
+	'components/header',
+	'components/hero-slider',
+	'components/indicator',
+	'components/service-offers';
